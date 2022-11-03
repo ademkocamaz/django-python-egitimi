@@ -7,7 +7,6 @@ def index(request):
     movies=Movie.objects.order_by('-created_date')
     context={
         'movies':movies
-
     }
     return render(request,'movies/list.html',context)
 
